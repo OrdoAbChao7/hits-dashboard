@@ -1,0 +1,21 @@
+{
+  "outputDirectory": "target/classes/public",
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://hits.sh/api/:path*"
+    },
+    {
+      "source": "/:match*.svg",
+      "destination": "https://hits.sh/:match*.svg"
+    },
+    {
+      "source": "/:match*.preview",
+      "destination": "https://hits.sh/:match*.preview"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
